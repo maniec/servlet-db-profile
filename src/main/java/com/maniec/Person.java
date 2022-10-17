@@ -13,11 +13,6 @@ public class Person {
     private String name;
     private String favoriteFruit;
 
-    public Person(String name, String favoriteFruit) {
-        this.name = name;
-        this.favoriteFruit = favoriteFruit;
-    }
-
     public Long getId() {
         return id;
     }
