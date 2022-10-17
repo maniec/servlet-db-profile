@@ -11,7 +11,7 @@ public class Person {
     @GeneratedValue
     private Long id;
     private String name;
-    private String favoriteFruit;
+    private String fruit;
 
     public Long getId() {
         return id;
@@ -29,19 +29,19 @@ public class Person {
         this.name = name;
     }
 
-    public String getFavoriteFruit() {
-        return favoriteFruit;
+    public String getFruit() {
+        return fruit;
     }
 
-    public void setFavoriteFruit(String favoriteFruit) {
-        this.favoriteFruit = favoriteFruit;
+    public void setFruit(String fruit) {
+        this.fruit = fruit;
     }
 
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", favoriteFruit='" + favoriteFruit + '\'' +
+                ", fruit='" + fruit + '\'' +
                 '}';
     }
 }
