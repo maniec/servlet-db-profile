@@ -46,8 +46,12 @@ Simple old-fashion .war Web Application form to demo "Dockerization"
 - docker network create app-network
 - docker network connect app-network app-db
 - docker network connect app-network app
+- docker network ls
 
 ### Access App via Browser
 - http://localhost:8080/app/
 
 # Composed Process
+- docker-compose.yml
+- docker compose up -d
+- docker ps
