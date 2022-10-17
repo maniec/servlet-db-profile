@@ -31,8 +31,12 @@ Simple old-fashion .war Web Application form to demo "Dockerization"
 
 # Manual Process
 
+## Database
+- docker pull mysql:8
+- docker run -d --name app-db -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=appDB mysql:8
+
 ## Dockerfile
-- mvn install
+- mvn clean install
 - ADD artifact to correct location
 - EXPORT port
 
@@ -43,5 +47,7 @@ Simple old-fashion .war Web Application form to demo "Dockerization"
 - bind a host port to the exposed container port
 - docker run -d -p 8080:8080 --name app app-img:1.0
 
-
+## Access Browser
+- http://localhost:8080/app/
+- 
 # Composed Process
