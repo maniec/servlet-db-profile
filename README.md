@@ -1,3 +1,7 @@
+# Web App
+
+Simple old-fashion .war Web Application form to demo "Dockerization"
+
 ## Pre Requisites
 - JDK
 - Git
@@ -12,7 +16,7 @@
 - git init
 - git add .
 - git commit -m "initial commit"
-- git remote add origin https://github.com/maniec/servlet-db-profile.git
+- git remote add origin https://github.com/maniec/[repo-name.git]
 - git branch -M main
 - git push -u origin main
 
@@ -22,4 +26,5 @@
 - mysql
 
 ## Build
-mvn install
+- <artifactId>maven-war-plugin</artifactId>
+- mvn install
