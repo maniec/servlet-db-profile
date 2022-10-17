@@ -28,3 +28,20 @@ Simple old-fashion .war Web Application form to demo "Dockerization"
 ## Build
 - <artifactId>maven-war-plugin</artifactId>
 - mvn install
+
+# Manual Process
+
+## Dockerfile
+- mvn install
+- ADD artifact to correct location
+- EXPORT port
+
+## Build Web App Image based on the Dockerfile
+- docker build -t app-img:1.0 .
+
+## Build Web App Container based on the Dockerfile Image
+- bind a host port to the exposed container port
+- docker run -d -p 8080:8080 --name app app-img:1.0
+
+
+# Composed Process
